@@ -1,0 +1,17 @@
+{
+  "name": "mon-petit-planner",
+  "version": "1.0.0",
+  "description": "Planner girly : journée, to-do lists, planning, habitudes, journal, schémas et statistiques",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0",
+    "express": "^4.21.0"
+  }
+}

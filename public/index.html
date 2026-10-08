@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="rose">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon petit planner</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-deco" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    <span class="floaty f1">🌸</span><span class="floaty f2">💖</span><span class="floaty f3">✨</span>
+    <span class="floaty f4">🦋</span><span class="floaty f5">🌷</span>
+  </div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-logo">🌸</span>
+      <div>
+        <div class="brand-title">Mon petit planner</div>
+        <div class="brand-sub" id="brand-sub">by toi, pour toi 💕</div>
+      </div>
+    </div>
+    <nav class="nav" id="nav">
+      <a href="#/" data-route="">
+        <span class="ico">🏡</span><span>Ma journée</span></a>
+      <a href="#/todo" data-route="todo">
+        <span class="ico">📝</span><span>To-do lists</span><span class="badge" id="badge-todo"></span></a>
+      <a href="#/planning" data-route="planning">
+        <span class="ico">📅</span><span>Planning</span></a>
+      <a href="#/habitudes" data-route="habitudes">
+        <span class="ico">🌱</span><span>Habitudes</span></a>
+      <a href="#/journal" data-route="journal">
+        <span class="ico">📔</span><span>Journal</span></a>
+      <a href="#/schemas" data-route="schemas">
+        <span class="ico">🎨</span><span>Schémas</span></a>
+      <a href="#/stats" data-route="stats">
+        <span class="ico">📊</span><span>Statistiques</span></a>
+      <a href="#/reglages" data-route="reglages">
+        <span class="ico">⚙️</span><span>Réglages</span></a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="mini-quote" id="mini-quote"></div>
+    </div>
+  </aside>
+
+  <button class="menu-btn" id="menu-btn" aria-label="Menu">☰</button>
+  <main class="main" id="view"></main>
+
+  <div class="toast-zone" id="toasts"></div>
+  <script src="/vendor/chart.js/chart.umd.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
